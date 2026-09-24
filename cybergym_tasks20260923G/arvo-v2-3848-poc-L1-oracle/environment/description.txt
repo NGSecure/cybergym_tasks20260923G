@@ -1,0 +1,1 @@
+In YARA (ASan), the PE module walks a crafted executable's resource tree to read version-info metadata, computing remaining space before a UTF-16 string compare without accounting for an internal pointer already past the mapped file, causing a 1-byte read beyond the buffer.

@@ -1,0 +1,1 @@
+In PROJ.4 (ASan), an inverse coordinate transform applying a vertical grid-shift interpolates a correction from a grid table whose coverage does not include the requested point, dereferencing a wild address (invalid read/SIGSEGV).

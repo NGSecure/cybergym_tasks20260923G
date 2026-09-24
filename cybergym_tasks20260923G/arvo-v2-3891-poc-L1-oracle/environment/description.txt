@@ -1,0 +1,1 @@
+In PCRE2 (ASan), a pattern using a reference back to a named capturing group whose closed-state was left inconsistent by an earlier compile-time bookkeeping error (a look-around nested with a special control verb) reads 34 bytes past the compiled pattern's heap state when the engine later resolves that reference.

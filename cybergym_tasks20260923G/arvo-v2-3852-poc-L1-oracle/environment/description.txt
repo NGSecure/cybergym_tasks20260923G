@@ -1,0 +1,1 @@
+In PCRE2 (ASan), compiling a pattern that nests a zero-width look-around, a capturing group, and a special control verb leaves the compiler's per-group bookkeeping inconsistent with the execution engine's expectations, so applying the already-compiled pattern reads one byte past a heap allocation.

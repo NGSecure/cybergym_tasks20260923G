@@ -1,0 +1,1 @@
+In gRPC (ASan), during server shutdown the internal deferred-work dispatch queue processes a per-connection HTTP/2 transport's own teardown, frees that transport, then reads 8 bytes back from it (heap-use-after-free read).

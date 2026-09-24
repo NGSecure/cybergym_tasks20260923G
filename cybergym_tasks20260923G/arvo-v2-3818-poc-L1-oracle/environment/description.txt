@@ -1,0 +1,1 @@
+In librawspeed (MSan), an older bit-packed Sony raw encoding fills the output buffer with a row-interleaving pattern that assumes an even row count, so a file declaring an odd number of rows leaves all odd rows unwritten and a later whole-buffer audit reads the uninitialized half.

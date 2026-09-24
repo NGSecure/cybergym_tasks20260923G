@@ -1,0 +1,1 @@
+In PROJ.4 (UBSan), the vertical grid-shift routine interpolates using whatever table-descriptor value is left in a local after its coverage-search loop, without checking the loop actually found a covering table, so an out-of-range coordinate leaves that local unset and the code dereferences garbage offsets (invalid read/SIGSEGV).
