@@ -1,0 +1,1 @@
+ImageMagick (ASan build): decoding a crafted Cineon (CIN) image, the code that unpacks encoded pixel samples into the image's internal per-channel representation reads one byte past the end of the input sample buffer while assembling a multi-byte value, triggering a 1-byte heap-buffer-overflow read.

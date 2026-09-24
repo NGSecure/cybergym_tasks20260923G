@@ -1,0 +1,1 @@
+ImageMagick (MSan build): writing a crafted image out as PSD, the sample-scaling step that converts a wide internal pixel channel value down to a narrower on-disk quantum reads a value that was left uninitialized by an earlier per-pixel color-negate operation, producing a use-of-uninitialized-value warning during PSD channel export.

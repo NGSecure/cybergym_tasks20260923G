@@ -1,0 +1,1 @@
+ImageMagick (GIF encoder, MSan build): while writing out an embedded 8BIM image profile that was cloned when the source GIF's metadata extension block was read, some bytes carried over from the profile buffer were never initialized, triggering a use-of-uninitialized-value warning on the write path.

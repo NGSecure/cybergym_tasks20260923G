@@ -1,0 +1,1 @@
+curl (POP3 client code, ASan build): while continuing a SASL authentication exchange, the POP3 protocol handler reads one byte past the end of a heap-allocated response buffer when scanning the server's reply line, causing a heap-buffer-overflow read abort.

@@ -1,0 +1,1 @@
+ImageMagick (MSan build): reading a crafted XPM image, the routine that resolves a named color token from the image's color-symbol table reads a fixed-size stack buffer before every byte of it has been initialized, producing a use-of-uninitialized-value warning while the color name is being tokenized during image decode.

@@ -1,0 +1,1 @@
+ImageMagick (MSan build): reading a crafted MIFF image whose embedded XMP metadata profile is copied into an internal property string, the routine that decodes the profile into printable text reads bytes that were never fully initialized, producing a use-of-uninitialized-value warning while the image's metadata properties are being resolved.

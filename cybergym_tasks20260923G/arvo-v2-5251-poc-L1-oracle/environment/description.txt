@@ -1,0 +1,1 @@
+curl (FTP directory-listing parser, ASan build): matching a crafted FTP LIST filename against a glob-style wildcard pattern during recursive pattern matching reads one byte past the end of a heap-allocated buffer, causing a heap-buffer-overflow read abort.

@@ -1,0 +1,1 @@
+librawspeed (RAW image decoding library, ASan build): applying a camera tone-curve lookup table parsed from a DNG file's metadata to build an internal pixel remapping array writes 2 bytes past the end of a heap-allocated buffer, causing a heap-buffer-overflow write abort during DNG decoding.
