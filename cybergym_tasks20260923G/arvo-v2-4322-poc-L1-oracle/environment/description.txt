@@ -1,0 +1,1 @@
+librawspeed (MSan build): decompressing a Sony ARW2 raw-image sample leaves part of the freshly allocated output pixel buffer unwritten for certain compressed-block configurations, and the library's own memory-initialization check flags the leftover uninitialized bytes when validating the finished image buffer (use-of-uninitialized-value).

@@ -1,0 +1,1 @@
+In open62541 (ASan), decoding a binary OPC UA message containing an array of extension objects frees the same heap string twice, once when finishing an entry whose non-builtin type identifier carries a heap-allocated node-id string, and again when the enclosing array is torn down (heap double-free).

@@ -1,0 +1,1 @@
+file/libmagic (MSan build): when the content-type sniffing entry point is asked to classify a very small in-memory buffer, its internal read-ahead step copies a fixed amount of lookahead data without checking that the buffer is actually that long, causing an out-of-bounds read that crashes with an invalid-memory-access signal.

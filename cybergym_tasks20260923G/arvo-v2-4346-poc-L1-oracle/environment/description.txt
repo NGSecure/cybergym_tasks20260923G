@@ -1,0 +1,1 @@
+open62541 (OPC UA stack, ASan build): decoding a UA_ExtensionObject nested inside a binary-encoded array releases its inner NodeId's string member while cleaning up the just-decoded element, then a later stage of the same array-copy routine reads that already-freed string data again, producing a heap-use-after-free read.

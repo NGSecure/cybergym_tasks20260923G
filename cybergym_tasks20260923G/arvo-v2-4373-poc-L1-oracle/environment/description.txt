@@ -1,0 +1,1 @@
+UnRAR (ASan build): unpacking a RAR5-format entry through the multi-threaded large-block decompression path copies a back-reference match into the output window without clamping the copy length to the window's actual available capacity, so an attacker-controlled match length writes one byte past the end of the allocated block (heap-buffer-overflow write).

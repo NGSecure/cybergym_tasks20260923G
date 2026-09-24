@@ -1,0 +1,1 @@
+open62541 (OPC UA stack, ASan build): decoding a crafted ExtensionObject inside a UA service-request message frees an internal string-typed field twice, causing a heap double-free abort on the server's binary message-processing path.

@@ -1,0 +1,1 @@
+UnRAR (MSan build): extracting a Unix symlink entry from a RAR5 archive reads an uninitialized wide-character buffer while validating whether the link target stays inside the extraction directory, triggering a use-of-uninitialized-value warning.

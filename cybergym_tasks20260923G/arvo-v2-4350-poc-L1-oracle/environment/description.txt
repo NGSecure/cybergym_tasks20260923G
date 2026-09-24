@@ -1,0 +1,1 @@
+UnRAR (MSan build): while reading a RAR5 header's optional extra-record block, a small string-append helper concatenates a wide-character field onto the in-memory archive comment state before that metadata has been populated for headers that carry no comment, so it reads leftover uninitialized stack bytes (use-of-uninitialized-value).

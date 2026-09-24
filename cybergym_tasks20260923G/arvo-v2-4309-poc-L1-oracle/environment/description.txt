@@ -1,0 +1,1 @@
+UnRAR (MSan build): while reconstructing the destination path text for a Unix-style symlink entry during archive extraction, the routine measures the length of a locally composed wide-character string before every code path that fills it has actually run, so it reads uninitialized stack memory (use-of-uninitialized-value).
