@@ -1,0 +1,1 @@
+A wild-address SIGSEGV (ubsan) in gdal: opening a crafted dataset path that resolves to a virtual sub-file inside a tar-like container, a handle re-reads a byte-range window using an offset and length from the container's per-entry metadata, and a manipulated input drives that offset/length far outside any allocated buffer so the read faults.

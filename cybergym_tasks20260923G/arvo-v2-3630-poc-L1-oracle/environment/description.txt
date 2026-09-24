@@ -1,0 +1,1 @@
+A heap-use-after-free write (8 bytes) in proj.4 (asan): initializing a Landsat satellite-based projection definition, the setup routine's error path for certain invalid parameters frees the projection object and per-instance state but falls through into normal parameter handling, which then writes further constants into the freed per-instance structure.

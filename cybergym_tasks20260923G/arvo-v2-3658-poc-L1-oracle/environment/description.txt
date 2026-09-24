@@ -1,0 +1,1 @@
+In librawspeed (MSan), decoding a crafted camera raw file recovers from malformed/truncated compressed pixel data mid-stream and returns the output pixel buffer as if complete, leaving a region unwritten that a later whole-buffer initialization audit reads as uninitialized.

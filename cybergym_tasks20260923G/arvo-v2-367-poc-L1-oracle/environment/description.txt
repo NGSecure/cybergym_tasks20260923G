@@ -1,0 +1,1 @@
+A bug in nlohmann/json (ASan heap-buffer-overflow read) lets the binary/CBOR deserializer read one byte past the input buffer when an indefinite-length value's terminator marker never appears in truncated or crafted deeply nested input, so the decoder keeps advancing without stopping.

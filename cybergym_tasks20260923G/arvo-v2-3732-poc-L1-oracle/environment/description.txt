@@ -1,0 +1,1 @@
+In librawspeed (MSan), a Canon slice-based lossless-JPEG raw whose per-slice widths describe less area than the full image finishes decoding without error yet leaves the buffer's uncovered tail unwritten, which a later whole-buffer initialization audit reads as uninitialized.

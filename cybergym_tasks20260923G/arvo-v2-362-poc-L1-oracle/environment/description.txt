@@ -1,0 +1,1 @@
+A bug in FreeType2 (ASan heap-buffer-overflow read) makes glyph-metrics code read past an internal buffer when a variable font's metrics-variation table declares a different number of design axes than the font declares elsewhere, so the buffer is sized for the wrong axis count.

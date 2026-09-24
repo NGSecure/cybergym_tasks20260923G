@@ -1,0 +1,1 @@
+A bug in FreeType2 (ASan heap-use-after-free read) reads through a stale pointer while parsing a CFF private dictionary: appending values grows a shared per-subfont buffer that gets relocated in memory, but another part of the parser keeps referencing the buffer's old address.
