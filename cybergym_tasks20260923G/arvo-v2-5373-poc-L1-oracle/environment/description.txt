@@ -1,0 +1,1 @@
+ImageMagick (MSan build): reading a crafted plain-text pixel-description image, an integer pixel-coordinate offset used to queue a pixel row into the image's pixel cache is read before every code path that should set it actually does so, producing a use-of-uninitialized-value warning during pixel-cache access.
