@@ -1,0 +1,1 @@
+UnRAR (archive extraction utility, MSan build): when deciding whether an entry inside an archive should be extracted based on name-matching rules, the utility computes the length of a wide-character filename before it has been fully initialized, causing a use-of-uninitialized-value warning during archive extraction.

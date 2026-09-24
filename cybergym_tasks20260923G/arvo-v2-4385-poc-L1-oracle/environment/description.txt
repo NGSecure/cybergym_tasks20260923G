@@ -1,0 +1,1 @@
+file (the Unix file-type-identification utility, MSan build): while formatting the magic-detection results for a crafted input, the buffer-output routine performs a wild write, producing a SEGV flagged by MemorySanitizer on the library's core classification path.

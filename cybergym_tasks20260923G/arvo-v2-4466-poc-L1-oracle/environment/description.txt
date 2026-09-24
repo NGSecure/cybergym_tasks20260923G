@@ -1,0 +1,1 @@
+GDAL (OGR DXF driver, ASan build): unescaping formatting/control codes embedded in a DXF MTEXT entity's text string reads a decoded character index past the end of a fixed-size stack buffer while converting an unusual escape sequence, causing a 1-byte stack-buffer-overflow read on the vector-layer feature-reading path.

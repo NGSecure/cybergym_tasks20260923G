@@ -1,0 +1,1 @@
+GDAL (OGR DXF vector-format driver, ASan build): parsing the special text-escape/formatting codes embedded in a crafted DXF DIMENSION or leader-annotation entity's label string reads one byte past the end of a stack buffer while unescaping the text, producing a stack-buffer-overflow read.

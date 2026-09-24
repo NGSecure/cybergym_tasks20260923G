@@ -1,0 +1,1 @@
+UnRAR (archive extraction utility, MSan build): when extracting a symbolic link from a Unix-style RAR archive entry, the routine that confirms the link target does not escape the destination folder consults a wide-character path buffer before it has been fully populated, triggering a use-of-uninitialized-value warning.
