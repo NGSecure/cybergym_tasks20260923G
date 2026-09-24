@@ -1,0 +1,1 @@
+OpenThread (Thread mesh-networking stack, ASan build): processing a routing information element inside a received network advertisement message reads past the end of a fixed-size on-stack route-cost table, causing a stack-buffer-overflow read while updating routing state for a mesh neighbor.

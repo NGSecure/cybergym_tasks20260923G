@@ -1,0 +1,1 @@
+open62541 (OPC UA stack, ASan build): processing a Write service request that targets a node's array-dimensions attribute frees an invalid, corrupted pointer, causing a wild-address memory-corruption abort inside the allocator on the server's binary message-processing path.

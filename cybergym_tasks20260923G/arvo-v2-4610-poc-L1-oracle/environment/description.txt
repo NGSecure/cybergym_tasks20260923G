@@ -1,0 +1,1 @@
+UnRAR (archive extraction tool, MSan build): reading the stored comment text embedded in a crafted RAR archive during extraction consumes a buffer that was never fully populated, triggering a use-of-uninitialized-value warning while viewing the archive's metadata.

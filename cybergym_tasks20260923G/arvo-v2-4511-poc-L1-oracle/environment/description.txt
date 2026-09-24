@@ -1,0 +1,1 @@
+librawspeed (raw-image decoding library, ASan build): unpacking bit-packed pixel data from a Panasonic raw-image file into an output buffer copies more compressed bits than the buffer was sized for when the pixel dimensions imply an unusually large row width, causing a heap-buffer-overflow write during the parallel decompression pass.

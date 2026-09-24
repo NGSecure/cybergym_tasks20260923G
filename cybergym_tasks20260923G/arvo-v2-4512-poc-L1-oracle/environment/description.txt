@@ -1,0 +1,1 @@
+UnRAR (archive-extraction library, MSan build): computing a progress-percentage value while parsing a RAR archive header reads a numeric header field that was allocated but never assigned for a particular header variant, producing a use-of-uninitialized-value warning during archive header parsing.

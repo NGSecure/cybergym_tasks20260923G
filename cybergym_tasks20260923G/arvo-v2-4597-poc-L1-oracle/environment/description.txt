@@ -1,0 +1,1 @@
+GDAL (raster/vector I/O library, ASan build): parsing a malformed GRIB2 product-definition section while decoding a grid message drives a low-level bit-extraction helper to read from a wild, out-of-bounds address, causing a read-access segmentation fault while opening a raster dataset.

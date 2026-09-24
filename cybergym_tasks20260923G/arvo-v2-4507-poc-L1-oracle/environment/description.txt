@@ -1,0 +1,1 @@
+UnRAR (archive-extraction library, MSan build): parsing a RAR archive's quick-access index while opening the archive for extraction consumes a cached file-position value that was never fully initialized, producing a use-of-uninitialized-value warning during header parsing.

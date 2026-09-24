@@ -1,0 +1,1 @@
+open62541 (OPC UA stack, UBSan build): processing a Write service request that updates a node's array-dimensions attribute frees a pointer computed from an attacker-controlled array-length value without validating it first, causing an invalid free and SIGSEGV inside the C library's memory-deallocation routine.

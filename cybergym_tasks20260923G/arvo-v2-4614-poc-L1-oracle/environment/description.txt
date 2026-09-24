@@ -1,0 +1,1 @@
+UnRAR (archive extraction tool, MSan build): converting a crafted archive's per-file header while parsing a RAR5-family header block reads fields that were never initialized, producing a use-of-uninitialized-value warning during entry-header parsing.
