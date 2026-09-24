@@ -1,0 +1,1 @@
+In GDAL (ASan), decoding a TIFF that uses a legacy JPEG compression mode through the whole-raster RGBA reconstruction path lets the mode's running next-chunk counter run one entry past a small internal offset table, so the 8-byte read spills into adjacent heap memory (heap overflow read).

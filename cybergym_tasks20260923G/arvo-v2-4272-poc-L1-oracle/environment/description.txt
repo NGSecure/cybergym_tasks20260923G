@@ -1,0 +1,1 @@
+In unrar (MSan), post-extraction bookkeeping run for every entry branches on an attribute field to translate stored permission bits, but an older backward-compatible header layout never assigns that field, so the leftover heap bytes are used (use-of-uninitialized-value).

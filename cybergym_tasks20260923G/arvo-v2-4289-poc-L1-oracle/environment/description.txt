@@ -1,0 +1,1 @@
+In librawspeed (MSan), an early block-compressed Samsung raw encoding steers its row-wise pixel prediction into reading the row(s) above the first rows of a strip, which have not been decoded yet, so freshly-allocated uninitialized destination bytes flow into the output and a later whole-buffer audit flags them.

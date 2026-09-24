@@ -1,0 +1,1 @@
+In unrar (MSan), displaying a RAR archive's legacy pre-3.0 embedded comment copies raw bytes into a buffer sized by the header's declared length without checking how many were available, so a truncated archive leaves the buffer's tail unwritten and a later full-length conversion reads it (use-of-uninitialized-value).

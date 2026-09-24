@@ -1,0 +1,1 @@
+In librawspeed (ASan), parsing camera white-balance metadata from a small TIFF-directory tag compares the tag's first bytes against a fixed marker string without verifying the tag holds enough bytes, so a too-short tag triggers a 1-byte read past the heap buffer.

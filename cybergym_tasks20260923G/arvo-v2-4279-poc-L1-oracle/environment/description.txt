@@ -1,0 +1,1 @@
+In unrar (MSan), extracting an entry whose Unicode-flagged name has bytes that do not map cleanly to the local narrow charset, the narrow-to-wide name conversion stops before null-terminating its destination, so later code scanning the name reads past the written portion into uninitialized memory (use-of-uninitialized-value).

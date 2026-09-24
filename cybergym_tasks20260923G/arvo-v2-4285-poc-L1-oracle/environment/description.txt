@@ -1,0 +1,1 @@
+In unrar (MSan), preparing to display an uncompressed RAR comment block, the code fills a scratch buffer to the header's declared comment length without checking how many bytes were actually read, then converts the full declared length narrow-to-wide, walking into the never-written tail (use-of-uninitialized-value).

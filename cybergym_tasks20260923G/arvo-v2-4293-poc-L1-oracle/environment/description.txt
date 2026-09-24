@@ -1,0 +1,1 @@
+In unrar (ASan), extracting a store-only (uncompressed) entry moves its payload through a small fixed-size transfer buffer, and a crafted corrupted remaining-size value makes the clamp/cast compute a transfer far larger than the buffer, reading roughly a megabyte past its end (heap overflow read).

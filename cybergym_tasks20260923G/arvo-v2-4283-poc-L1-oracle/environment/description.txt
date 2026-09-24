@@ -1,0 +1,1 @@
+In unrar (MSan), viewing a crafted archive's comment runs a separate small decompression pass whose low-level byte-feed routine gates a running packed-data hash on a per-entry flag that the comment path never populates, so it reads uninitialized bytes from an unset entry record (use-of-uninitialized-value).

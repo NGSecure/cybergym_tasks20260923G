@@ -1,0 +1,1 @@
+In unrar (MSan), displaying a RAR archive's legacy embedded comment, the code walks to the comment header offset and, when that header parse does not fully succeed, proceeds anyway, reading length/checksum fields that the failed parse never wrote (use-of-uninitialized-value).
