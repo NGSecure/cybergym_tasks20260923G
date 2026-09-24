@@ -1,1 +1,0 @@
-In librawspeed (MSan), an uncompressed Nikon raw variant handed a file shorter than its declared dimensions salvages a partial image but never resizes or fully fills the output buffer, so its trailing rows stay uninitialized and a later whole-buffer audit reads them.

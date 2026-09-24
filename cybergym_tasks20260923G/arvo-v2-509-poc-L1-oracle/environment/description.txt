@@ -1,1 +1,0 @@
-A bug in FreeType2 (ASan heap-buffer-overflow write) corrupts heap memory when a TrueType-specific metrics adjustment is invoked for a CFF2-outline font instance, so an internal size-reset step writes into a size record using a field layout the CFF2 instance does not actually have.

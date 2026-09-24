@@ -1,1 +1,0 @@
-librawspeed (RAW image decoding library, ASan build): building a tone-correction curve from quadrant-multiplier control points while decoding a Phase One IIQ raw file reads 8 bytes past the logical end of a heap-backed vector, triggering a container-overflow read warning.

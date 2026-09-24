@@ -1,1 +1,0 @@
-In YARA (ASan), the PE module iterates an export directory that advertises more entries than the file actually contains, running two bytes past the end of the mapped image data before the loop detects it (heap overflow read).

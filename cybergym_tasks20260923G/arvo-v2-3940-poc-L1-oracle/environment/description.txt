@@ -1,1 +1,0 @@
-In PROJ.4 (ASan), setting up a horizontal datum grid-shift step builds an internal copy of the caller's +grids= string into a heap buffer sized for the original but writes one character more than that size, overflowing the allocation (7-byte heap write).

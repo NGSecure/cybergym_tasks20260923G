@@ -1,1 +1,0 @@
-librawspeed's Fuji RAF/X-Trans raw-image decompressor (ASan use-after-poison build): while reconstructing a decoded line of pixel data into the sensor's X-Trans output layout, a miscomputed per-line copy step writes two bytes into a strip-buffer region that was never unpoisoned as valid, initialized image data, producing a use-after-poison write crash.

@@ -1,1 +1,0 @@
-librawspeed (DNG/TIFF raw-image decoding library, ASan build): applying a DNG opcode list's row/column offset adjustment to a decoded raw image reads pixel data using an offset derived from opcode parameters that were never validated against the image's actual dimensions, causing a heap-buffer-overflow read far outside the pixel buffer.

@@ -1,1 +1,0 @@
-Wireshark (IEEE 1905.1 dissector, ASan build): rendering a bitmask-flags field while dissecting a crafted IEEE 1905.1 metric-reporting-policy TLV reads 8 bytes past the end of a fixed-size global flags table, causing a global-buffer-overflow read abort.

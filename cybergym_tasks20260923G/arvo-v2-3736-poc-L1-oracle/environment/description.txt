@@ -1,1 +1,0 @@
-In open62541 (ASan), an unauthenticated OPC UA discovery request sizes a result buffer to the number of registered servers, then records a hit for every client-supplied URI without checking for duplicates, so repeated URIs resolving to the same server write past the buffer's end (heap overflow write).

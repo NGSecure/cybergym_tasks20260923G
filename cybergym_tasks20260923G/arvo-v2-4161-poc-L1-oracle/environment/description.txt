@@ -1,1 +1,0 @@
-In curl (ASan), the built-in wildcard/glob matcher parsing an FTP-listing filter pattern that contains an unterminated bracket character-set expression fails to detect the pattern's end and advances one byte past the heap buffer (1-byte overflow read).

@@ -1,1 +1,0 @@
-librawspeed (RAW image decoding library, ASan build): decoding a crafted lossless-JPEG raw image drives the pixel-unpacking loop one iteration too far into an already-decoded output region, writing into memory AddressSanitizer had poisoned as off-limits and triggering a use-after-poison violation.

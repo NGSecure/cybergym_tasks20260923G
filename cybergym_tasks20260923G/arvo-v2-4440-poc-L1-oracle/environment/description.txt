@@ -1,1 +1,0 @@
-librawspeed (RAW image decoding library, ASan build): decoding a crafted lossless-JPEG raw image whose pixel buffer size was miscalculated for its slice/component layout causes the pixel-unpacking loop to write past the end of the allocated output buffer, producing a wild-address write flagged by AddressSanitizer.

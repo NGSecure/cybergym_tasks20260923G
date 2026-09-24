@@ -1,1 +1,0 @@
-librawspeed (RAW image parsing library, ASan build): applying a per-row/per-column DNG opcode adjustment to a crafted DNG file's pixel data reads past the end of an internal buffer, producing a heap-buffer-overflow crash while normalizing raw sensor data.
