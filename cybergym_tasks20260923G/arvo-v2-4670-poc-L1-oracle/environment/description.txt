@@ -1,0 +1,1 @@
+librawspeed (RAW image decoding library, MSan build): decompressing a lossless-JPEG-compressed component of a crafted DNG raw-image file leaves part of the pixel buffer unwritten for certain sample and component configurations, so a later sanity check over the decoded image reports a use-of-uninitialized-value warning.

@@ -1,0 +1,1 @@
+open62541 (OPC UA stack, ASan build): after a secure-channel binary message chunk finishes processing and its send buffer is released, an error-response path on the same TCP connection still writes an encoded integer field into that already-freed buffer, producing a heap-use-after-free write on the server's binary message-processing path.

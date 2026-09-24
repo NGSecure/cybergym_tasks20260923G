@@ -1,0 +1,1 @@
+curl (ASan fuzzing build): when curl's upload engine asks the fuzz harness's read callback for more data than the pre-allocated destination buffer holds while filling the request-body read buffer during an upload transfer, the callback copies past the end of that buffer, producing a heap-buffer-overflow write.

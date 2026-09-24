@@ -1,0 +1,1 @@
+GDAL (ASan build): parsing a crafted NTF (National Transfer Format) vector data file frees an internal per-record field buffer while reconstructing profile-based 3D geometry from OGR NTF records, then reads through the now-freed pointer, producing a heap-use-after-free read on the vector-driver read path.

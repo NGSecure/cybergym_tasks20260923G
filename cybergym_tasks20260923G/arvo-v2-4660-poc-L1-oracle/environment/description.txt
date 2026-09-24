@@ -1,0 +1,1 @@
+GDAL (raster/vector I/O library, ASan build): searching a MapInfo TAB relational view's index-node structure for a matching key while comparing key bytes reads one byte past the end of an index buffer, causing a heap-buffer-overflow read during feature retrieval.
