@@ -1,0 +1,1 @@
+In YARA (ASan), compiling a crafted rules string frees the small heap buffer holding one lexical token's value twice, once via the normal per-production cleanup and again via the parser's generic value-stack cleanup on an incomplete parse (heap double-free).

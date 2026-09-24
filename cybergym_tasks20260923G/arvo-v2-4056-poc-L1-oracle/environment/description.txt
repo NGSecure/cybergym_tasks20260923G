@@ -1,0 +1,1 @@
+In GDAL (ASan), regenerating a raster overview with the Gaussian resampling kernel reads a few bytes past a fixed-size kernel-window lookup table for certain window/kernel-size combinations, spilling into an adjacent global (4-byte global-buffer-overflow read).

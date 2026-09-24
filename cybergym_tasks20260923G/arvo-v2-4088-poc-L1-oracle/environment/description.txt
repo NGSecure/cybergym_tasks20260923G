@@ -1,0 +1,1 @@
+In HarfBuzz (ASan), the legacy font-embedded kerning fallback maps two glyphs to class indices and combines them into an offset into a fixed-size value table without bounds-checking, so a font reporting out-of-range glyph classes pushes the read far outside the table (SEGV/out-of-bounds read).

@@ -1,0 +1,1 @@
+In open62541 (ASan), during server shutdown while draining a queue of deferred callbacks, one callback frees a client session and a second still-pending callback for the same subscription then dereferences that freed session to flush its publish-response bookkeeping (8-byte heap-use-after-free read).

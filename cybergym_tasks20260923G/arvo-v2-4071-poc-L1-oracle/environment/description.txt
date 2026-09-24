@@ -1,0 +1,1 @@
+In GDAL (ASan), producing a resized raster copy through a non-default convolution resampling path writes past the end of an internal intermediate pixel buffer (8-byte heap overflow write).

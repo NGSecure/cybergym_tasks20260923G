@@ -1,0 +1,1 @@
+In GStreamer (ASan), the typefind media-sniffer skips comment lines in a Netpbm (PBM/PGM/PPM) ASCII header whose comment section extends to the end of the probed data, so it reads one byte past the input buffer instead of stopping (heap overflow read).

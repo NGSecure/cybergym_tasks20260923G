@@ -1,0 +1,1 @@
+In YARA (MSan), compiling a rule with hex-string ({ ... } byte/wildcard/jump) syntax reads a field of a heap-allocated internal matching-node before every part of it has been set (use-of-uninitialized-value).

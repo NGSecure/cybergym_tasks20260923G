@@ -1,0 +1,1 @@
+In PROJ.4 (UBSan), a horizontal datum shift through NTv2/NADCON correction grids, when the point falls outside every loaded grid's coverage, returns a reference to an unrelated not-yet-populated grid entry instead of reporting no coverage, and the caller reads correction offsets from it at an invalid address (SIGSEGV).

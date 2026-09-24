@@ -1,0 +1,1 @@
+In HarfBuzz (MSan), shaping Arabic text that uses glyph-stretching justification marks the must-not-split glyph positions of a stretched span but touches one slot beyond the span, whose per-glyph data has not been written yet (use-of-uninitialized-value).
